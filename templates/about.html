@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% block title %}
+about
+{% endblock %}
+
+
+{% block content %}
+
+{% load static %}
+
+<link rel="stylesheet"
+      href="{% static '/css/style2.css' %}">
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src= "{% static 'images/dh1.jpg' %}" class="d-block w-100" alt="...">
+    
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src= "{% static '/images/dh2.jpg' %}" class="d-block w-100" alt="...">
+      
+    </div>
+    <div class="carousel-item">
+      <img src= "{% static '/images/dh3.jpg' %}" class="d-block w-100" alt="...">
+      
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>Liv Long has been revolutionizing the art of healthcare delivery through its focus on quality, patient safety and ethical practices. The group has established a fine tradition of healing by upholding the strengths of competence, compassion, technology and digitalization. Today, Liv Long is the largest healthcare network in the state of Kerala and is among the top leading healthcare organizations in the country.
+
+    With a team of dedicated professionals who bring experience and expertise, cutting-edge facilities, world class treatment protocols, we strive to deliver quality care balancing the high expectations of patients and the increasing cost of medical technology. For us healthcare is not just a profession but a calling, where our patients and their families become an integral part of our legacy.</p>
+  
+</div>
+
+<h2 style="text-align:center">Our Teams</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'images/bird.jpg' %}" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2> Dheeraj</h2>
+        <p class="title">CEO & Founder</p>
+        <p>dheerajmjona@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'images/bird.jpg' %}" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Kayden</h2>
+        <p class="title">Group Chairman and Managing Director</p>
+        <p>kayden@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'images/bird.jpg' %}" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Karlin</h2>
+        <p class="title">Executive Director</p>
+        <p>karlin@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+
